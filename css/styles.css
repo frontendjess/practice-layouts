@@ -1,0 +1,99 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "hero-banner hero-banner hero-banner"
+    "main__card main__card sidebar"
+    "footer footer footer";
+  grid-row-gap: 0.5rem;
+  grid-column-gap: 0.5rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: hotpink;
+  height: 50px;
+}
+
+.hero-banner {
+  grid-area: hero-banner;
+  background-color: salmon;
+  height: 125px;
+}
+
+.main__card {
+  grid-area: main__card;
+  background-color: blue;
+}
+
+.main__card__top {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.main__card__top--1 {
+  width: 31%;
+  height: 200px;
+  background-color: lightblue;
+}
+
+.main__card__top--2 {
+  width: 31%;
+  height: 200px;
+  background-color: lightcoral;
+}
+
+.main__card__top--3 {
+  width: 31%;
+  height: 200px;
+  background-color: lightgoldenrodyellow;
+}
+
+.main__card__middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main__card__middle--1 {
+  width: 97%;
+  height: 100px;
+  background-color: indianred;
+  margin: 15px 15px;
+}
+
+.main__card__bottom {
+  display: flex;
+  width: 100%;
+  background-color: red;
+  justify-content: space-around;
+}
+
+.main__card__bottom--1 {
+  width: 32%;
+  height: 150px;
+  background-color: pink;
+}
+
+.main__card__bottom--2 {
+  width: 32%;
+  height: 150px;
+  background-color: burlywood;
+}
+
+.main__card__bottom--3 {
+  width: 32%;
+  height: 150px;
+  background-color: aquamarine;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: yellow;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: plum;
+  height: 75px;
+}
